@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login page</title>
+<body>
+<link rel="stylesheet" href="login.css">
+<nav>
+<ul>
+<li>
+<a href="web page.html">Home</a>
+<a href="About.html">About</a>
+<a href="form.html">Register</a>
+<a href="login.html">Login</a>
+</li>
+</ul>
+<h1 Align="center">Login form</h1>
+<Script type="text/javaScript">
+function validateForm() {
+    let x = document.forms["login"]["User name"].value;
+    if (x == "") {
+      alert("User name must be filled out");
+      return false;
+    }
+  }
+</script>
+<form method="get" action=Record.html>
+<table Align="center"
+       Width="500px"
+       Height="300px"
+       boder="1"
+       frame="box">
+<tr>
+<td Align="center">
+User name:<input type="text">
+</td>
+</tr>
+<br>
+<tr>
+<td Align="center">
+password:<input type="password">
+</td>
+</tr>
+<br>
+<tr>
+<td Align="center">
+<input type="button" value="login">
+</td>
+</tr>
+<br>
+<br>
+<tr>
+<td Align="left">
+<a  Align=left  href="form.html">register now</a>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
