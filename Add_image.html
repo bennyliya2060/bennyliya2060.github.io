@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--html open-->
+<html lang="en">
+<!--head tag open-->
+<head>
+  <!--page title-->
+  <title>photo_gallery</title>
+  <!--bootstrap code-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--bootsrap close-->
+  <!--css style-->
+  <style>
+  body{
+      background-image: url("bg2.jpg");
+      background-size: cover;
+      width:100%;
+  }
+   p{
+       font-size:40px;
+       color:white;
+       font-style:oblique;
+   }
+  </style>
+<!--head close-->
+</head>
+<!--body open-->
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src=logo2.jpg></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html" style="color: white;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="images.php" style="color: white;">images</a>
+              </li>  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: white;">settings</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">update image</a></li>
+                  <li><a class="dropdown-item" href="#">delete image</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Top menu on small screens -->
+    <header class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-5 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+  <!-- <img class="img-fluid"src="logo1.jpg"> -->
+  <!--form-->
+  <div class="container mt-3">
+  <br>
+  <br>
+  <h2 Align="center">Add images</h2>
+  <form Align="center" boder="1" frame="all" action="files.php" method="POST" enctype="multipart/form-data">
+  <label for="name">image name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <br>
+  <label for="date">created date:</label><br>
+  <input type="date" id="date" name="date">
+  <br>
+  <br>
+  Select image to upload:
+  <br>
+  <br>
+  <input type="file" name="fileToUpload" id="fileToUpload" style="margin-left:120px;"> 
+  <br>
+  <br>
+  <button type="submit">Add image</button>
+</form>
+</div>
+</body>
+</html>
