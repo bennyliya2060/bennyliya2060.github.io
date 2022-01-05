@@ -1,0 +1,8 @@
+body{
+  background-image: url("C:\xampp\htdocs\cosmetic shop\images\form bg.jpg");
+  background-size: cover;
+  width:100%;
+}
+button{
+    background-color: orangered;
+}
